@@ -127,25 +127,22 @@ Thorough documentation of commands, configurations, screenshots, problems, and s
 ## Security and Ethical use
 The purpose of this laboratory is only intended for education purposes
 
-## Tools and Resources
-```
-7-zip :  https://7-zip.org/download.html
-VirtualBox :  https://virtualbox.org/wiki/Downloads
-Kali Linux : https://kali.org/get-kali
-```
+## 🔗 Tools & Resources
+
+- **7-Zip:** https://7-zip.org/download.html
+- **VirtualBox:** https://virtualbox.org/wiki/Downloads
+- **Kali Linux:** https://kali.org/get-kali
 
 ## Project Information
 Cybersecurity at Networkwalks | Week 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository : Github
 
-## Author
-```
-'Matebang Sekoati
-Cybersecurity Intern B084
+## 👤 Author
+
+**Matebang Sekoati**  
+Cybersecurity Intern B084  
 Cybersecurity at Networkwalks
-Linkedin : www.linkedin.com/in/matebang-sekoati-70b68a24b
-```
 
-
+LinkedIn: https://www.linkedin.com/in/matebang-sekoati-70b68a24b
 
 
 
