@@ -100,7 +100,7 @@ ip a
 ping -c 4 google.com
 ```
 
-![Internet Connectivity](3-screenshot-kali-internet-connection(1).png)
+![Internet Connectivity](3-kali-internet-connection(1).png)
 
 The internet connection was a success.
 
