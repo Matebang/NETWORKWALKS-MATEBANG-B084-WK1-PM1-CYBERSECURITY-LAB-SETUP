@@ -45,7 +45,7 @@ Oracle VirtualBox
         |
 NAT Network (10.0.0.0/24)
         |
-        +-- Kali Linux VM (ATTACKER) 10.0.0.2
+        +-- Kali Linux VM (ATTACKER) 10.0.0.15
         |
         +-- Victim / Target VMs 
 
@@ -65,7 +65,7 @@ NAT Network ---> Host ---> Internet
 | 🧠 Kali RAM | 2048 MB |
 | 🌐 Virtual Network | NAT Network |
 | 📡 Network Address | 10.0.0.0/24 |
-| 🐧 Kali IP Address | 10.0.0.3/24 |
+| 🐧 Kali IP Address | 10.0.0.15/24 |
 | 🚪 Default Gateway | 10.0.0.1 |
 | 🌍 DNS Server | 8.8.8.8 |
 
@@ -110,18 +110,22 @@ After initial configuration, a snapshot named Clean Kali-Network Setup was taken
 ![VirtualBox Snapshot](4-screenshot-kali-snapshot.png)
 
 ## Problems Encountered
-NIL
+**No IPv4 address and DHCP timeouts:** Kali showed "Disconnected", `ip a` listed no IPv4 address, and `nmcli` reported that the IP configuration
+could not be reserved. A static address (`10.0.0.2`) did not work, so a different one (`10.0.0.15/24`) was assigned with `nmcli`, which restored internet access.
 
 ## What I learned
 I learned how to create and configure a virtual environment for cybersecurity practice. The following are also takeaways from this lab:
 
-# 1. VM Snapshots
+# 1. Lower IP Addresses
+Addresses at the start of a NAT Network range can conflict with reserved addresses, so choosing a higher address avoids problems
+
+# 2. VM Snapshots
 Creating a clean snapshot before a high-risk or experimental activity provides good recovery point for later security exercises.
 
-# 2. Static IP Configuration
+# 3. Static IP Configuration
 This project built my skills in configuring and validating IPv4 addressing, subnet masks, gateways, and DNS settings on Kali Linux.
 
-# 3. Documentation
+# 4. Documentation
 Thorough documentation of commands, configurations, screenshots, problems, and solutions is key in cybersecurity work.
 
 ## Security and Ethical use
